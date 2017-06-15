@@ -13,7 +13,7 @@ Packages it installs:
 
 # How to run the setup
 
-Assuming user doesn't have git installed already, download and unzip: https://github.com/Achint08/Quick_Setup/archive/master.zip
+Assuming user doesn't have git installed already, download and unzip: https://github.com/Achint08/Quick-Setup/archive/master.zip
 
 From terminal, move to the folder just unzipped and then from the Terminal, run `sudo setup.sh`
 
