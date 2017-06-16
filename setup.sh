@@ -27,9 +27,9 @@ function install_rbenv {
     else
       sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
       git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-      echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc (~/.profile / ~/.zshrc)
-      echo 'eval "$(rbenv init -)"' >> ~/.bashrc (~/.profile / ~/.zshrc)
-      source ~/.bashrc (~/.profile / ~/.zshrc)
+      grep -q 'export PATH="$HOME/.rbenv/bin:$PATH"' ~/.bashrc || echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+      grep -q 'eval "$(rbenv init -)"' ~/.bashrc || echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+      source ~/.bashrc
       git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
     fi
     rbenv install 2.3.1
