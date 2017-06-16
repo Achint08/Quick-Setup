@@ -15,7 +15,7 @@ Packages it installs:
 
 Assuming user doesn't have git installed already, download and unzip: https://github.com/Achint08/Quick-Setup/archive/master.zip
 
-From terminal, move to the folder just unzipped and then from the Terminal, run `sudo ./setup.sh`
+From terminal, move to the folder just unzipped and then from the Terminal, run `chmod +x ./setup.sh` followed with `sudo ./setup.sh`.
 
 **Important**: It is essential that you run this script with sudo privileges. In other words `sudo ./setup.sh` and not just `./setup.sh`.
 
